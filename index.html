@@ -20,9 +20,10 @@
 	a:hover {color: #A042DB; text-decoration: underline;}
 	h1 {
 		color: #000000;
-		font-size: 30px; 
+		font-size: 35px; 
+		font-weight: 600; 
 		text-align: center; 
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		}
 	h1.category	{
 		color: #3D3D3C; 
@@ -30,7 +31,7 @@
 		font-size: 28px; 
 		font-weight: 400; 
 		text-align: left; 
-		margin-top: 40px; 
+		margin-top: 35px; 
 		margin-bottom: 10px;
 		}
 	h2 {
@@ -42,7 +43,7 @@
 		}
 	h3 {
 		color: #A042DB;
-		font-size: 25px;
+		font-size: 22px;
 		font-weight: 500;
 		margin-top: 15px;
 		margin-bottom: 5px;
@@ -95,9 +96,9 @@
 		font-size: 20px; 
 		margin-top: 5px; 
 		margin-bottom: 5px;}
-	strong	{font-weight: 500;}
+	strong {font-weight: 500;}
 	.large {font-size: 23px; color: #A042DB; font-weight: 700;}
-	.UIText {text-transform:uppercase; color: #A042DB; font-size: 20px; font-weight: 500;}
+	.UIText {text-transform:uppercase; color: #A042DB; font-size: 18px; font-weight: 500;}
 	.UITextLC {color: #A042DB; font-size: 20px; font-weight: 500;}
 	div.toc {text-align: left; font-size: 22px;}
 
@@ -118,14 +119,13 @@
 </head>
 
 <body>
-<h1>Myko FAQ</h1>
-<h2 class="center">Welcome to Myko Frequently Asked Questions!</h2>
-<h3>Your first stop for answers:</h3>
-<ul>
-	<li><a href="#SetUp">Getting Set Up with the Myko Mobile App</a></li>
-	<li><a href="#Manage">Managing Myko Accounts and Adding Products</a></li>
-	<li><a href="#Control">Controlling Myko Products through the App</a></li>
-</ul>
+<h1>Myko Help &amp; Advice</h1>
+<!--<h2 class="center">Please use our list of<br>Frequently Asked Questions for help</h2>-->
+<h2 class="center">Do you have questions? Look here for answers.</h2>
+<p align="center"><a href="#SetUp">Getting Set Up with the Myko Mobile App</a></p>
+<p align="center"><a href="#Manage">Managing Myko Accounts and Adding Products</a></p>
+<p align="center"><a href="#Control">Controlling Myko Products through the App</a></p>
+
 <h1 class="category" id="SetUp">Getting Set Up with the Myko Mobile App </h1>
 
 <h2>Where can I find the Myko app?</h2>
@@ -142,7 +142,7 @@
 <h2>What permissions does the Myko app require?</h2>
 <p>The Myko app requires that you have <strong>Bluetooth</strong> turned on, asks that you have enabled and allowed access to <strong>Location</strong> services, and requires access to the <strong>Camera</strong>, and in some cases <strong>Photos</strong>:</p>
 <ul>
-	<li>Bluetooth (“Nearby Devices” in Android) access  is required for adding Myko products to your account and then controlling them when Wi-Fi is not available. You do not need to pair your Myko products with Bluetooth explicitly; that happens for you automatically in the background.</li>
+	<li>Bluetooth (“Nearby Devices” in Android) access is required for adding Myko products to your account and then controlling them when Wi-Fi is not available. You do not need to pair your Myko products with Bluetooth explicitly; that happens for you automatically in the background.</li>
 	<li>Location access permission is first requested when onboarding a product. Access is not required to operate Myko products in general, but is required for some specific functions, such as when using sunrise/sunset as a reference point in scheduling. Also, information provided when you allow Location service access can be helpful for product development, support, and diagnostic services. For more information, please refer to the Myko Privacy policy.
 	<p><strong>Note:</strong> For Android mobile phones, please select “Precise” mode when turning on Location services. This mode enables GPS.</p></li>
 	<li>Camera access is required to scan QR Codes when you add products to your Myko account.</li>
@@ -224,10 +224,13 @@
 </ol>
 <p>To open your product’s Settings screen:<p>
 <ol>
-	<li>First go to the product's controls screen, then tap <span class="UIText">Settings</span> in the lower-right of the screen. That product’s Settings screen opens.</li>
+	<li>First go to the product’s controls screen, then tap <span class="UIText">Settings</span> in the lower-right of the screen. That product’s Settings screen opens.</li>
 	<li>At the top of this screen, some products may list “advanced” settings, but there are several sections that appear across all products: <span class="UIText">General</span>, <span class="UIText">Connectivity</span>, and <span class="UIText">Info</span>. Each section can expand or collapse. Just tap the up (<span class="UIText">&#94;</span>) or down (<span class="UIText">&#8964;</span>) arrowheads on the right to toggle the view. These sections contain information about your product, including the name you chose when you added your product, its room assignment, network connectivity details, and more.</li>
 	<li>For settings that you can edit, tap the right-facing arrow.</li>
 </ol>
+
+<h2>Can I change the icon and product names that are displayed on the Home screen?</h2>
+<p>Yes, go to a product’s Settings screen as described in the answer above. At the top of the screen you’ll see your product’s name, with its icon just to the left. Tap either to make a change to what’s displayed on the Home screen.</p>
 
 <h2>Do Myko lighting products work with traditional/analog dimmers?</h2>
 <p>No, Myko products do not work when connected to electrical circuits that have traditional dimmers on the same circuit. There’s a basic incompatibility. Myko products require full wall voltage to operate and control the lighting brightness using controls in the app. A traditional dimmer switch dims conventional bulbs by lowering the line voltage on the circuit, which will cause Myko products to lose power and drop offline.</p>
@@ -266,7 +269,6 @@
 	<li>You are returned to your Favourites screen with your recently-selected products and group listed. From here you can open each product’s controls.</li>
 </ol>
 
-<!-- 
 <h2>What are Schedules, Moments, and Automations and how do I use them?</h2>
 <p>A <strong>Moment</strong> captures the state of a product or group of products and saves it so you can return to the state with one tap.</p>
 <p>A <strong>Schedule</strong> saves the state of a product or group of products so that at a specific time they will return to that state.</p>
@@ -278,7 +280,6 @@
 	<li>I decide I want this moment to go on automatically at 7:30 each evening, so I set up a schedule for it, turning it on at 7:30pm and off at 11:00pm.</li>
 	<li>I also think that I’d like that moment to trigger if the motion sensor by the front door detected motion between midnight and 5am, so I set up that automation.</li>
 </ol>
--->
 
 
 
@@ -290,17 +291,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<footer>©2023 Afero, Inc. (Last updated: 14 Feb 2023)</footer>
+<footer>©2023 Afero, Inc. (Last updated: 22 Feb 2023)</footer>
 <p>&nbsp;</p>
 </body>
 </html>
